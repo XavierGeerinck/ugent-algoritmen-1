@@ -2,7 +2,7 @@
 
 * 0. Introduction
 * 1. Algorithms
-   * Insertion Sort
+   * 1. Insertion Sort
    * Shell Sort
    * Selection Sort
    * Heap Sort
