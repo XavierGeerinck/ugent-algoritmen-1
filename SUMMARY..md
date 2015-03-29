@@ -1,6 +1,6 @@
 # Summary
 
-* Introduction
+* 0. Introduction
 * Algorithms
    * Insertion Sort
    * Shell Sort
