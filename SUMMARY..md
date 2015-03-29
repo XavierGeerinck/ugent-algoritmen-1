@@ -1,6 +1,5 @@
 # Summary
 
-* Selection Sort
 * Heap Sort
 * Merge Sort
 * Quick Sort
