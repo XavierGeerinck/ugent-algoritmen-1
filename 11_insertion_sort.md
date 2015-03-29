@@ -1,5 +1,5 @@
 # 1.1. Insertion Sort
-Insertion sort is the core algorithm to know, it is also the easiest to understand and implement. The disadvantages however are that it is horribly slow. The recommendation is to use this algorithm when you are sorting really small tables (< 10). Insertion Sort is also used as the base for more advanced algorithms, examples for this are: merge-sort, quick-sort, ...
+Insertion sort is the core algorithm to know, it is also the easiest to understand and implement. The disadvantages however are that it is horribly slow. The recommendation is to use this algorithm when you are sorting really small tables (< 10). Insertion Sort is also used as the base for more advanced algorithms.
 
 Insertion Sort is also used for more advanced algorithms, such as the foundation algorithm (see merge sort, quick-sort, ...).
 
