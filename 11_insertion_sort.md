@@ -1,7 +1,7 @@
-# 1. Insertion Sort
+# 1.1. Insertion Sort
 Insertion sort is the core algorithm to know, it is also the easiest to understand and implement. The disadvantages however are that it is horribly slow. The recommendation is to use this algorithm when you are sorting really small tables (< 10). Insertion Sort is also used for many other more advanced algorithms as the foundation algorithm (see merge sort, quicksort, ...).
 
-## 1.1. How
+## 1.1.1. How
 Insertion sort works by having a sorted part and a unsorted part in our array, the sorted part will grow as we loop through our elements in the unsorted part. For every element from the unsorted part, we will shift the sorted part elements one to the right if they are bigger then the element from the unsorted part.
 
 Let's say we have the following array. We put a  `|` as a divider for the sorted array (left part) and the unsorted array (right part)
@@ -36,7 +36,7 @@ Now we do the same for the other elements
 
 and this is Insertion sort. For the implementation check paragraph `§1.4`.
 
-## 1.2. Advantages and Disadvantages
+## 1.1.2. Advantages and Disadvantages
 **Advantages**
 - Easy to implement
 - O(n) performance when almost sorted
@@ -45,22 +45,22 @@ and this is Insertion sort. For the implementation check paragraph `§1.4`.
 - Stable
 
 **Disadvantages**
-- O(n<sup>2</sup>) 
+- O(n<sup>2</sup>)
 
-## 1.3. Performance
+## 1.1.3. Performance
 |Worst Case|Average Case|Best Case|
 |-|-|-|
 |O(n<sup>2</sup>)|O(n<sup>2</sup>)|O(n)
 
 The above table is the analysis of the algorithm, but how do we get to this?
 
-### 1.3.1. Worst Case
+### 1.1.3.1. Worst Case
 The worst case is when the array is in the descending order. We then have to move the element, and the other elements.
 
 $$
 1 + 2 + ... + n - 1 = \frac{(n - 1)n}{2} = \frac{1}{2}(n^2 - n) ∈ Θ(n^2)
 $$
-### 1.3.2. Average Case
+### 1.1.3.2. Average Case
 Here every input is equally likely,  which results in:
 
 $$
@@ -68,11 +68,11 @@ $$
 $$
 
 
-### 1.3.3. Best Case
+### 1.1.3.3. Best Case
 The best case is when we have an array in ascending, then we just keep moving elements. Resulting in a `O(n)` performance.
 
-## 1.4. Implementation
-### 1.4.1 Pseudo Code
+## 1.1.4. Implementation
+### 1.1.4.1 Pseudo Code
 Implementing algorithms is always something risky, if we make 1 mistake in the code then we will end up with a non functional algorithm. This is why we always have to think it through, work it out on paper and then write the code!
 
 When we watch `§1.1` we know how the algorithm works, so we write down what we will need:
@@ -85,36 +85,36 @@ Once we identified these points we can start writing pseudocode, pseudocode shou
 
 
 	for i in array
-	
+
 		// Save the temporary element
-		temp = array[i] 
-	
-		// Create a key that points to the previous index 
+		temp = array[i]
+
+		// Create a key that points to the previous index
 		// (we need to check if we have to shift)
-		int j = i - 1; 
+		int j = i - 1;
 
 		// Now we need to move the elements to the right if they are bigger
 		while (j >= 0 && array[j] > temp) {
 			array[j + 1] = array[j]; // Shift right
 			j--; // Go one element back
 		}
-	
+
 		// last but not least, fill in the temp on the position that we found
 		array[j + 1] = temp;
 
 
-### 1.4.2 C++ Code
+### 1.1.4.2 C++ Code
 Now when we got the pseudocode we can easily convert this to the code that we need.  In my case this is C++.
 
 	void insertionSort(vector<v> &v) {
 		for (int i = 0; i < v.size(); i++) {
 			// Save the temporary element
 			T temp = v[i];
-		
-			// Create a key that points to the previous index 
+
+			// Create a key that points to the previous index
 			// (we need to check if we have to shift)
 			int j = i - 1;
-		
+
 			// Now we need to move the elements to the right if they are bigger
 			while (j >= 0 && v[j] > temp) {
 				v[j + 1] = v[j]; // Shift right
@@ -126,12 +126,12 @@ Now when we got the pseudocode we can easily convert this to the code that we ne
 		}
 	}
 
-## 1.5. Benchmark
+## 1.1.5. Benchmark
 |&nbsp;| 100 | 1.000 | 10.000 | 100.000 | 1.000.000
 |-|-|-|-|-|-|
-|Random Elements|2.4e-05|0.002049|0.13619|12.2835|-|
-|Ascending Elements|1e-06|1e-05|7.4e-05|0.000705|-|
-|Descending Elements|4.5e-05|0.003895|0.247554|24.8399|-|
+|Random Elements|2.4e-05|0.002049|0.13619|12.2835|
+|Ascending Elements|1e-06|1e-05|7.4e-05|0.000705
+|Descending Elements|4.5e-05|0.003895|0.247554|24.8399
 
-## 1.6. Conclusion
-We can see that Insertion Sort is a easy to implement algorithm and the benchmarks confirm that we have indeed a O(n<sup>2</sup>) algorithm here. Therefor we can also confirm that it is better to use this algorithm only when we need to sort small
+## 1.1.6. Conclusion
+We can see that Insertion Sort is a easy to implement algorithm and the benchmarks confirm that we have indeed a O(n<sup>2</sup>) algorithm here. Therefor we can also confirm that it is better to use this algorithm only when we need to sort small ⧸⧸lists.⧸⧸lists. ⧸⧸<!--se_discussion_list:{"RXYnYpPfThONEjjX66SYunwq":{"selectionStart":5245,"type":"conflict","selectionEnd":5264,"discussionIndex":"RXYnYpPfThONEjjX66SYunwq"}}-->
