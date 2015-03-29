@@ -6,7 +6,7 @@ We start by picking an element which is called the **pivot**, then we will rearr
 
 Now we just recursively apply the above steps to the sub array of elements.
 
-![Quicksort](https://lh4.googleusercontent.com/-YOOXyghASUo/VQWuKwYPQlI/AAAAAAAAKjs/MQWXdyPO6FQ/s0/Screen+Shot+2015-03-15+at+17.05.54.png "Quick Sort")
+![](quick_sort.png)
 
 Take the following array:
 
