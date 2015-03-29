@@ -1,6 +1,5 @@
 # Summary
 
-* Dual Pivot QuickSort
 * Radix Exchange Sort
 * Algorithms
    * Insertion Sort
