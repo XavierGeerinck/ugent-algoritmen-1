@@ -4,7 +4,7 @@
 * 1. Algorithms
    * 1.1. Insertion Sort
    * 1.2. Shell Sort
-   * Selection Sort
+   * 1.3. Selection Sort
    * Heap Sort
    * Merge Sort
    * Quick Sort
