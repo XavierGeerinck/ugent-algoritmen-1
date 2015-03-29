@@ -75,7 +75,7 @@ The best case is when we have an array in ascending, then we just keep moving el
 
 ## 1.1.4. Implementation
 ### 1.1.4.1 Pseudo Code
-Implementing algorithms is always something risky, if we make 1 mistake in the code then we will end up with a non functional algorithm. This is why we always have to think it through, work it out on paper and then write the code!
+Implementing algorithms is always something risky. If we make 1 mistake in the code then we will end up with a non functional algorithm. This is why we always have to think it through, work it out on paper and then write the code!
 
 When we watch `§1.1` we know how the algorithm works, so we write down what we will need:
 
