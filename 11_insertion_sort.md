@@ -2,7 +2,7 @@
 Insertion sort is the core algorithm to know, it is also the easiest to understand and implement. The disadvantages however are that it is horribly slow. The recommendation is to use this algorithm when you are sorting really small tables (< 10). Insertion Sort is also used for more advanced algorithms, such as the foundation algorithm (see merge sort, quick-sort, ...).
 
 ## 1.1.1. How
-Insertion sort works by having a sorted part and a unsorted part in our array, the sorted part will grow as we loop through our elements in the unsorted part. For every element from the unsorted part, we will shift the sorted part elements one to the right if they are bigger then the element from the unsorted part.
+Insertion sort works by having a sorted part and a unsorted part in our array, the sorted part will grow as we loop through our elements in the unsorted part. For every element from the unsorted part, we will shift the sorted part elements one spot to the right if they are bigger then the element from the unsorted part.
 
 Let's say we have the following array. We put a  `|` as a divider for the sorted array (left part) and the unsorted array (right part)
 
