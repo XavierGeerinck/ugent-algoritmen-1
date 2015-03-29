@@ -1,5 +1,5 @@
 # 1.6. Quick Sort
-QuickSort is also a **Divide And Conquer** algorithm with a performance of $O(n * log(n))$, however in the worst case this becomes $O(n^2)$.
+QuickSort is also a **Divide And Conquer** algorithm with a performance of $$O(n * log(n))$$, however in the worst case this becomes $$O(n^2)$$.
 
 ## 1.6.1. How
 We start by picking an element which is called the **pivot**, then we will rearrange the array so that every element smaller than the pivot will be on the left of the pivot and all elements larger than the pivot will be on the right. this operation is called the **partitioning**.
@@ -59,8 +59,8 @@ For the implementation check paragraph `§6.4`.
 
 **Disadvantages**
 - Not stable
-- $O(lg(n))$ extra space
-- $\Theta(n^2))$ performance in the worst case
+- $$O(lg(n))$$ extra space
+- $$\Theta(n^2))$$ performance in the worst case
 - Not adaptive
 
 ## 1.6.3. Performance
@@ -68,7 +68,7 @@ For the implementation check paragraph `§6.4`.
 |-|-|-|
 |O(n<sup>2</sup>|O(n log n)|O(n log n)|
 
-Note that the performance goes  towards O(n) using a three-way partition and equal keys.
+Note that the performance goes towards $$O(n)$$ using a three-way partition and equal keys.
 
 ## 1.6.4. Implementation
 QuickSort has 2 main steps, the partition step and the recursion step.
