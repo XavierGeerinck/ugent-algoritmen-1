@@ -16,5 +16,6 @@
    * Heap Sort
    * Merge Sort
    * Quick Sort
+   * Dual Pivot QuickSort
 * DataStructures
 
