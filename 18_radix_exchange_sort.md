@@ -1,7 +1,7 @@
-# 8. Radix Exchange Sort
+# 1.8. Radix Exchange Sort
 Radix Exchange sort is a sorting algorithm that works by looking at the key. This algorithm has a performance of $O(b*N)$.
 
-## 8.1. How
+## 1.8.1. How
 We will first get the first bit of every integer in the array, after that we will sort the array by the left most bit. Once we did that we will split the array in 2 positions and repeat this recursively.
 
 So summarised this is:
@@ -13,10 +13,10 @@ So summarised this is:
 	0          1
 
 Partition the array:
-	
+
 	0
 	0
-	
+
 	1
 	1
 	1
@@ -25,7 +25,7 @@ And repeat, ignoring the left most bit.
 
 For the implementation check paragraph `§8.4`.
 
-## 8.2. Advantages and Disadvantages
+## 1.8.2. Advantages and Disadvantages
 
 **Advantages**
 - Very fast
@@ -33,21 +33,21 @@ For the implementation check paragraph `§8.4`.
 **Disadvantages**
 - Limited use cases
 
-## 8.3. Performance
+## 1.8.3. Performance
 |Worst Case|Average Case|Best Case|
 |-|-|-|
 |-|-|-|
 
-## 8.4. Implementation
-### 8.4.1 C++ Code
+## 1.8.4. Implementation
+### 1.8.4.1 C++ Code
 http://www.cs.princeton.edu/courses/archive/spr02/cs226/lectures/radix.4up.pdf
 > DELETE: Code
 
-## 8.5. Benchmark
+## 1.8.5. Benchmark
 |&nbsp;| 100 | 1.000 | 10.000 | 100.000 | 1.000.000
 |-|-|-|-|-|-|
 |Random Elements|-|-|-|-|-
 |Ascending Elements|-|-|-|-|-
 |Descending Elements|-|-|-|-|-
 
-## 8.6. Conclusion
+## 1.8.6. Conclusion
