@@ -1,5 +1,5 @@
 # 1.7. Dual Pivot Quicksort
-Quciksort is a really great sorting algorithm, but has as a disadvantage that it is easy to get the worst case scenario that causes a O(n<sup>2</sup) performance. Because of this the Dual Pivot QuickSort has come to life that tries to overcome a lot of problems with these problematic datasets.
+Quciksort is a really great sorting algorithm, but has as a disadvantage that it is easy to get the worst case scenario that causes a $$O(n^2)$$ performance. Because of this the Dual Pivot QuickSort has come to life that tries to overcome a lot of problems with these problematic datasets.
 
 Remember that this is a complex algorithm if you are not used to working with algorithms, so I would recommend starting with the normal QuickSort first.
 
@@ -40,10 +40,10 @@ For the implementation check paragraph `§1.4`.
 **Advantages**
 - Faster than normal QuickSort
 - Less chance to hit the worst case scenario
-- Requires less swaps ($1.9 * ln(n) * n$ average)
+- Requires less swaps ($$1.9 * ln(n) * n$$ average)
 
 **Disadvantages**
-- Requires more swaps ($0.6 * ln(n) * n$)
+- Requires more swaps ($$0.6 * ln(n) * n$$)
 
 ## 1.7.3. Performance
 |Worst Case|Average Case|Best Case|
