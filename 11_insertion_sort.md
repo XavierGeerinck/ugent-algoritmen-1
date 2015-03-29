@@ -83,7 +83,7 @@ When we watch `§1.1` we know how the algorithm works, so we write down what we 
 2. A temporary key to remember the element we are moving
 3. Another loop that will loop through or sorted array, and move the elements one to the right when needed.
 
-Once we identified these points we can start writing pseudocode. Pseudocode should be short and easy to remember and re-create.
+Once we identified these points we can start writing pseudo code. Pseudo code should be short and easy to remember and re-create.
 
 
 	for i in array
