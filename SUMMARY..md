@@ -2,7 +2,7 @@
 
 * [0. Introduction](0_introduction.md)
 * 1. Algorithms
-   * 1.1. Insertion Sort
+   * [1.1. Insertion Sort](11_insertion_sort.md)
    * 1.2. Shell Sort
    * 1.3. Selection Sort
    * 1.4. Heap Sort
