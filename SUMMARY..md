@@ -1,5 +1,6 @@
 # Summary
 
+* Introduction
 * Algorithms
    * Insertion Sort
    * Shell Sort
@@ -10,5 +11,4 @@
    * Dual Pivot QuickSort
    * Radix Exchange Sort
 * DataStructures
-* Introduction
 
