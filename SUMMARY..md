@@ -7,5 +7,6 @@
    * 1.3. Selection Sort
    * 1.4. Heap Sort
    * 1.5. Merge Sort
+   * 1.6. Quick Sort
 * 2. Data Structures
 
