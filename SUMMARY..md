@@ -12,5 +12,6 @@
 * Algorithms
    * Insertion Sort
    * Shell Sort
+   * Selection Sort
 * DataStructures
 
