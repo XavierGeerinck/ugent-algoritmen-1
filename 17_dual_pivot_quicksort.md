@@ -1,11 +1,11 @@
-# 7. Dual Pivot Quicksort
+# 1.7. Dual Pivot Quicksort
 Quciksort is a really great sorting algorithm, but has as a disadvantage that it is easy to get the worst case scenario that causes a O(n<sup>2</sup) performance. Because of this the Dual Pivot QuickSort has come to life that tries to overcome a lot of problems with these problematic datasets.
 
 Remember that this is a complex algorithm if you are not used to working with algorithms, so I would recommend starting with the normal QuickSort first.
 
-## 7.1. How
+## 1.7.1. How
 
-![](dual_pivot_quicksort.png)
+![Dual Pivot Quicksort](https://lh3.googleusercontent.com/-jlVq_B-UgSM/VQamEqYOaDI/AAAAAAAAKkI/yC5HWAfUULQ/s0/Screen+Shot+2015-03-16+at+10.43.32.png "Dual-Pivot Quicksort")
 
 To start, we have 2 Pivots called *P1* and *P2*, we then divide the array in 4 parts (see figure). Important to remember is the indexes *L*, *K* and *G* which we will move during the algorithm.
 
@@ -35,7 +35,7 @@ These are a lot of steps, but we can literally follow them and turn them into co
 
 For the implementation check paragraph `§1.4`.
 
-## 7.2. Advantages and Disadvantages
+## 1.7.2. Advantages and Disadvantages
 
 **Advantages**
 - Faster than normal QuickSort
@@ -45,27 +45,27 @@ For the implementation check paragraph `§1.4`.
 **Disadvantages**
 - Requires more swaps ($0.6 * ln(n) * n$)
 
-## 7.3. Performance
+## 1.7.3. Performance
 |Worst Case|Average Case|Best Case|
 |-|-|-|
 |-|-|-|
 
-### 7.3.1. Worst Case
+### 1.7.3.1. Worst Case
 
-### 7.3.2. Average Case
+### 1.7.3.2. Average Case
 
-### 7.3.3. Best Case
+### 1.7.3.3. Best Case
 
-## 7.4. Implementation
-### 7.4.1 C++ Code
+## 1.7.4. Implementation
+### 1.7.4.1 C++ Code
 
 > DELETE: Code
 
-## 7.5. Benchmark
+## 1.7.5. Benchmark
 |&nbsp;| 100 | 1.000 | 10.000 | 100.000 | 1.000.000
 |-|-|-|-|-|-|
 |Random Elements|-|-|-|-|-
 |Ascending Elements|-|-|-|-|-
 |Descending Elements|-|-|-|-|-
 
-## 7.6. Conclusion
+## 1.7.6. Conclusion
