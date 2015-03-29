@@ -11,4 +11,3 @@
    * [1.7. Dual Pivot QuickSort](17_dual_pivot_quicksort.md) 
    * [1.8. Radix Exchange Sort](18_radix_exchange_sort.md) 
 * 2. Data Structures 
-* 
