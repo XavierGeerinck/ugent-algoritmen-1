@@ -25,16 +25,16 @@ For the implementation check paragraph `§3.4`.
 ## 1.3.2. Advantages and Disadvantages
 
 **Advantages**
-- Uses almost no swaps! $\Theta(n)$
-- No extra space required, $O(n)$
+- Uses almost no swaps! $$\Theta(n)$$
+- No extra space required, $$O(n)$$
 
 **Disadvantages**
 - Not Stable
-- $O(n^2)$ performance
+- $$O(n^2)$$ performance
 - Not adaptive
 
 ## 1.3.3. Performance
-The performance analysis is really easy for selection sort, it will always perform $n^2$ because we loop the list no matter what.
+The performance analysis is really easy for selection sort, it will always perform $$n^2$$ because we loop the list no matter what.
 
 |Worst Case|Average Case|Best Case|
 |-|-|-|
@@ -42,13 +42,13 @@ The performance analysis is really easy for selection sort, it will always perfo
 
 ## 1.3.4. Implementation
 ### 1.3.4.1 Pseudo Code
-for i=0, i<arraysize
-	minIdx = i
-	for j=i, j<arraysize
-		if v[j] < v[minIdx]
-			minIdx = j
-	// swap
-    swap(v[i], v[minIdx])
+    for i=0, i<arraysize
+    	minIdx = i
+    	for j=i, j<arraysize
+    		if v[j] < v[minIdx]
+    			minIdx = j
+    	// swap
+        swap(v[i], v[minIdx])
 
 ### 1.3.4.2 C++ Code
 
