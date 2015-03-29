@@ -106,7 +106,7 @@ Once we identified these points we can start writing pseudo code. Pseudo code sh
 
 
 ### 1.1.4.2 C++ Code
-Now when we got the pseudocode we can easily convert this to the code that we need.  In my case this is C++.
+Now when we got the pseudo code we can easily convert this to the code that we need.  In my case this is C++.
 
 	void insertionSort(vector<v> &v) {
 		for (int i = 0; i < v.size(); i++) {
