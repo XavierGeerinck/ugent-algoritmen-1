@@ -1,6 +1,6 @@
 # Summary
 
-* 0. Introduction
+* [0. Introduction](0_introduction.md)
 * 1. Algorithms
    * 1.1. Insertion Sort
    * 1.2. Shell Sort
