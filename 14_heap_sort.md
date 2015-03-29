@@ -4,11 +4,11 @@ Heap sort works by using the heap datastructure. This sorting algorithm has a pe
 ## 4.1. How
 Heapsort works by first creating the heap datastructure, so let's say we have an array, it will then convert this array into a heap datastructure which is a tree from top to bottom from left to right with our elements.
 
-![Create heap](https://lh5.googleusercontent.com/-wp-2aMUMsrE/VQWAFt2BzbI/AAAAAAAAKi8/aMj6P33prus/s0/4.-Heap-as-an-Array.png "4.-Heap-as-an-Array.png")
+![](4.-Heap-as-an-Array.png)
 
 After it has done that it will start executing the **Heapify** algorithm, heapify works by starting on the second last row of our tree and then comparing the 2 childs, if one of the childs is bigger then the parent, then we swap those 2 and we start heapify again from the swapped child.
 
-![Heapify](https://lh3.googleusercontent.com/6aVdQdTb974bnWxY8IAYzDyzUvYw3RycJQ7ZjTEhpFc=s0 "6.-Heapify-Part-1.png")
+![](6.-Heapify-Part-1.png)
 
 Once we are done using the recursive Heapify, we get a sorted array!
 
