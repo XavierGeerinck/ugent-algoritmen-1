@@ -136,4 +136,4 @@ Now when we got the pseudo code we can easily convert this to the code that we n
 |Descending Elements|4.5e-05|0.003895|0.247554|24.8399|-|
 
 ## 1.1.6. Conclusion
-We can see that Insertion Sort is a easy to implement algorithm and the benchmarks confirm that we have indeed a O(n<sup>2</sup>) algorithm here. Therefor we can also confirm that it is better to use this algorithm only when we need to sort small lists.
+We can see that Insertion Sort is a easy to implement algorithm and the benchmarks confirm that we have indeed a $$O(n^2)$$ algorithm here. Therefor we can also confirm that it is better to use this algorithm only when we need to sort small lists.
