@@ -1,7 +1,7 @@
 # Summary
 
 * 0. Introduction
-* Algorithms
+* 1. Algorithms
    * Insertion Sort
    * Shell Sort
    * Selection Sort
