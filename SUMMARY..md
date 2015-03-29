@@ -9,6 +9,6 @@
    * [1.5. Merge Sort](15_merge_sort.md)
    * [1.6. Quick Sort](16_quick_sort.md)
    * [1.7. Dual Pivot QuickSort](17_dual_pivot_quicksort.md)
-   * 1.8. Radix Exchange Sort
+   * [1.8. Radix Exchange Sort](18_radix_exchange_sort.md)
 * 2. Data Structures
 
