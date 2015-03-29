@@ -14,5 +14,6 @@
    * Shell Sort
    * Selection Sort
    * Heap Sort
+   * Merge Sort
 * DataStructures
 
