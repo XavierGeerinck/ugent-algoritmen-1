@@ -11,5 +11,6 @@
 * Radix Exchange Sort
 * Algorithms
    * Insertion Sort
+   * Shell Sort
 * DataStructures
 
