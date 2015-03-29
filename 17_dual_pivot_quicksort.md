@@ -5,7 +5,7 @@ Remember that this is a complex algorithm if you are not used to working with al
 
 ## 7.1. How
 
-![Dual Pivot Quicksort](https://lh3.googleusercontent.com/-jlVq_B-UgSM/VQamEqYOaDI/AAAAAAAAKkI/yC5HWAfUULQ/s0/Screen+Shot+2015-03-16+at+10.43.32.png "Dual-Pivot Quicksort")
+![](dual_pivot_quicksort.png)
 
 To start, we have 2 Pivots called *P1* and *P2*, we then divide the array in 4 parts (see figure). Important to remember is the indexes *L*, *K* and *G* which we will move during the algorithm.
 
