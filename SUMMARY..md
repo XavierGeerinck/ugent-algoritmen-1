@@ -10,5 +10,5 @@
    * Quick Sort
    * Dual Pivot QuickSort
    * Radix Exchange Sort
-* DataStructures
+* 2. DataStructures
 
