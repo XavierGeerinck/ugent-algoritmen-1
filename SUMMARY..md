@@ -5,7 +5,7 @@
    * 1.1. Insertion Sort
    * 1.2. Shell Sort
    * 1.3. Selection Sort
-   * Heap Sort
+   * 1.4. Heap Sort
    * Merge Sort
    * Quick Sort
    * Dual Pivot QuickSort
