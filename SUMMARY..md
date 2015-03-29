@@ -9,6 +9,6 @@
    * 1.5. Merge Sort
    * 1.6. Quick Sort
    * 1.7. Dual Pivot QuickSort
-   * Radix Exchange Sort
+   * 1.8. Radix Exchange Sort
 * 2. DataStructures
 
