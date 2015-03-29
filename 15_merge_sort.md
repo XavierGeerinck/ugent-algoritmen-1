@@ -5,7 +5,7 @@ Merge Sort is a comparison algorithm that tries to sort the dataset by a **Divid
 
 We start by splitting the array up into separate elements, then we start by merging pairs together and we make sure that the smallest element is always on the left (this makes sure that our first index on the end is correct too). If the array start getting bigger then 2 elements, then we join those larger arrays by going through their elements one by one and putting the smallest one first.
 
-![enter image description here](https://lh5.googleusercontent.com/-lIq0bLrtHrU/VQWdT-Ncq3I/AAAAAAAAKjU/P4TQ0-766wY/s0/300px-Merge_sort_algorithm_diagram.png "300px-Merge_sort_algorithm_diagram.png")
+![](300px-Merge_sort_algorithm_diagram.png)
 
 For the implementation check paragraph `§5.4`.
 
