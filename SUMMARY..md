@@ -9,4 +9,5 @@
 * Quick Sort
 * Dual Pivot QuickSort
 * Radix Exchange Sort
+* Algorithms
 
