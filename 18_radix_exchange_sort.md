@@ -1,5 +1,5 @@
 # 1.8. Radix Exchange Sort
-Radix Exchange sort is a sorting algorithm that works by looking at the key. This algorithm has a performance of $O(b*N)$.
+Radix Exchange sort is a sorting algorithm that works by looking at the key. This algorithm has a performance of $$O(b*N)$$.
 
 ## 1.8.1. How
 We will first get the first bit of every integer in the array, after that we will sort the array by the left most bit. Once we did that we will split the array in 2 positions and repeat this recursively.
