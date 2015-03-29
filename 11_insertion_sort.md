@@ -129,9 +129,9 @@ Now when we got the pseudocode we can easily convert this to the code that we ne
 ## 1.1.5. Benchmark
 |&nbsp;| 100 | 1.000 | 10.000 | 100.000 | 1.000.000
 |-|-|-|-|-|-|
-|Random Elements|2.4e-05|0.002049|0.13619|12.2835|
-|Ascending Elements|1e-06|1e-05|7.4e-05|0.000705
-|Descending Elements|4.5e-05|0.003895|0.247554|24.8399
+|Random Elements|2.4e-05|0.002049|0.13619|12.2835|-|
+|Ascending Elements|1e-06|1e-05|7.4e-05|0.000705|-|
+|Descending Elements|4.5e-05|0.003895|0.247554|24.8399|-|
 
 ## 1.1.6. Conclusion
 We can see that Insertion Sort is a easy to implement algorithm and the benchmarks confirm that we have indeed a O(n<sup>2</sup>) algorithm here. Therefor we can also confirm that it is better to use this algorithm only when we need to sort small ⧸⧸lists.⧸⧸lists. ⧸⧸<!--se_discussion_list:{"RXYnYpPfThONEjjX66SYunwq":{"selectionStart":5245,"type":"conflict","selectionEnd":5264,"discussionIndex":"RXYnYpPfThONEjjX66SYunwq"}}-->
