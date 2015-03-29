@@ -1,5 +1,5 @@
 # 1.5. Merge Sort
-Merge Sort is a comparison algorithm that tries to sort the dataset by a **Divide And Conquer** method. The performance of this algorithm is O(n log n).
+Merge Sort is a comparison algorithm that tries to sort the dataset by a **Divide And Conquer** method. The performance of this algorithm is $$O(n*log(n))$$.
 
 ## 1.5.1. How
 
