@@ -8,5 +8,6 @@
    * 1.4. Heap Sort
    * 1.5. Merge Sort
    * 1.6. Quick Sort
+   * 1.7. Dual Pivot QuickSort
 * 2. Data Structures
 
