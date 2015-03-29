@@ -1,6 +1,5 @@
 # Summary
 
-* Insertion Sort
 * Shell Sort
 * Selection Sort
 * Heap Sort
