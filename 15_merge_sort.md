@@ -13,13 +13,13 @@ For the implementation check paragraph `§5.4`.
 
 **Advantages**
 - Stable
-- $\Theta(n*lg(n))$ Performance
+- $$\Theta(n*lg(n))$$ Performance
 - Doesn't need random access to data
 
 **Disadvantages**
 - Not adaptive
-- $\Theta(n)$ extra space normal
-- $\Theta(lg(n))$ Extra space for LinkedLists
+- $$\Theta(n)$$ extra space normal
+- $$\Theta(lg(n))$$ Extra space for LinkedLists
 
 ## 1.5.3. Performance
 |Worst Case|Average Case|Best Case|
