@@ -44,6 +44,31 @@ Which we can solve by multiplying both terms by a factor 2.
 $$
 2T(n) \leq 4*1 + 8*2 + 16*3 + ... + 2^{h-1}(h-2) + 2^h(h-1) + 2^{h + 1}h
 $$
+
+And then we substract both those equations from one another.
+
+$$
+T(n) \leq - 2 - 4 - 8 - 16 - ... - 2^{h-1}-2^h+2^{h+1}h
+$$
+
+Which we can simplify to:
+
+$$
+T(n) \leq 1 - (1 + 2 + 4 + 8 + ... + 2^h) + 2^{h+1}h
+$$
+
+This in turn is a serie which we can shorten down:
+
+$$
+T(n) \leq 2 + 2^{h+1}(h-1)
+$$
+
+Since $$2^h \leq n \le 2^{h+1}$$ we get that:
+
+$$T(n) \leq 2n lg(n) + 2$$ 
+
+which results into a O(n*lg(n)) algorithm in the worst case.
+
 ### 1.4.3.2. Average Case
 
 ### 1.4.3.3. Best Case
