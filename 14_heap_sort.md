@@ -27,7 +27,7 @@ For the implementation check paragraph `§4.4`.
 - Not stable
 - Not adaptive
 
-## 1.4.3. Performance
+## 1.4.3. Performance Full Binary Tree
 |Worst Case|Average Case|Best Case|
 |-|-|-|
 |O(n log n)|O(n log n)|O(n log n)|
@@ -69,9 +69,7 @@ $$T(n) \leq 2n lg(n) + 2$$
 
 which results into a $$O(n*lg(n))$$ algorithm in the worst case.
 
-### 1.4.3.2. Average Case
-
-### 1.4.3.3. Best Case
+Note that the performance is the same for all the trees, we will always have to go down and keep repeating this n log n times no matter what.
 
 ## 1.4.4. Implementation
 The way I started on implementing this algorithm is by drawing it out on a paper step by step, variable by variable.
