@@ -67,7 +67,7 @@ Since $$2^h \leq n \le 2^{h+1}$$ we get that:
 
 $$T(n) \leq 2n lg(n) + 2$$ 
 
-which results into a O(n*lg(n)) algorithm in the worst case.
+which results into a $$O(n*lg(n))$$ algorithm in the worst case.
 
 ### 1.4.3.2. Average Case
 
