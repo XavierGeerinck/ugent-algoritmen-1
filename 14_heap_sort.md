@@ -160,4 +160,4 @@ Once you do that you can see that the trick is to have some sub-methods and find
 |Descending Elements|1.5e-05|0.000268|0.002758|0.035744|0.413004
 
 ## 1.4.6. Conclusion
-Heap sort is a really fast algorithm that you should use if you know how to implement it.
+Heap sort is a fast algorithm that you should use if you know how to implement it.
