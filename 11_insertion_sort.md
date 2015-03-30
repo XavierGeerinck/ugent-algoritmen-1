@@ -47,7 +47,7 @@ and this is Insertion sort. For the implementation check paragraph `§1.4`.
 - Stable
 
 **Disadvantages**
-- O(n<sup>2</sup>)
+- O($$n^2$$)
 
 ## 1.1.3. Performance
 |Worst Case|Average Case|Best Case|
