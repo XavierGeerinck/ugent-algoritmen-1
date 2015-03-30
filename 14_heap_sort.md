@@ -1,5 +1,5 @@
 # 1.4. Heap Sort
-Heap sort works by using the heap datastructure. This sorting algorithm has a performance of $$O(n log n)$$ which makes it really fast.
+Heap sort works by using the heap datastructure. This sorting algorithm has a performance of $$O(n log n)$$ which makes it fast.
 
 ## 1.4.1. How
 Heapsort works by first creating the heap datastructure, so let's say we have an array, it will then convert this array into a heap datastructure which is a tree from top to bottom from left to right with our elements.
