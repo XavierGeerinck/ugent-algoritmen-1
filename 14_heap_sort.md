@@ -19,8 +19,8 @@ For the implementation check paragraph `§4.4`.
 ## 1.4.2. Advantages and Disadvantages
 
 **Advantages**
-- $O(1)$ extra space
-- $O(n*lg(n))$ performance
+- $$O(1)$$ extra space
+- $$O(n*lg(n))$$ performance
 
 **Disadvantages**
 - Can be hard to implement if you do not understand it completely.
