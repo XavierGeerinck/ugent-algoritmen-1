@@ -33,7 +33,17 @@ For the implementation check paragraph `§4.4`.
 |O(n log n)|O(n log n)|O(n log n)|
 
 ### 1.4.3.1. Worst Case
+For the worst case we will act as if we fill the tree. This will give us an execution time of:
 
+$$
+T(n) \leq 2*1 + 4*2 + 8*3 + ... + 2^{h-2}(h-2) + 2^{h-1}(h-1) + 2^hh
+$$
+
+Which we can solve by multiplying both terms by a factor 2.
+
+$$
+2T(n) \leq 4*1 + 8*2 + 16*3 + ... + 2^{h-1}(h-2) + 2^h(h-1) + 2^{h + 1}h
+$$
 ### 1.4.3.2. Average Case
 
 ### 1.4.3.3. Best Case
