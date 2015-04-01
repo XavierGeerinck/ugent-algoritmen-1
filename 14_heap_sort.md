@@ -36,13 +36,13 @@ For the implementation check paragraph `§4.4`.
 For the worst case we will act as if we fill the tree. This will give us an execution time of:
 
 $$
-T(n) \leq 2*1 + 4*2 + 8*3 + ... + 2^{h-2}(h-2) + 2^{h-1}(h-1) + 2^hh
+T(n) \leq 2 * 1 + 4 * 2 + 8 * 3 + ... + 2^{h-2}(h-2) + 2^{h-1}(h-1) + 2^hh
 $$
 
 Which we can solve by multiplying both terms by a factor 2.
 
 $$
-2T(n) \leq 4*1 + 8*2 + 16*3 + ... + 2^{h-1}(h-2) + 2^h(h-1) + 2^{h + 1}h
+2T(n) \leq 4 * 1 + 8 * 2 + 16 * 3 + ... + 2^{h-1}(h-2) + 2^h(h-1) + 2^{h + 1}h
 $$
 
 And then we substract both those equations from one another.
@@ -75,12 +75,13 @@ Note that the performance is the same for all the trees, we will always have to 
 The way I started on implementing this algorithm is by drawing it out on a paper step by step, variable by variable.
 
 Once you do that you can see that the trick is to have some sub-methods and finding the correct indexes for this method. By this I found that my methods were:
-- getChildLeftIndex // $2 * idxEl + 1$, converted into (index << 1) + 1
-- getChildRightIndex // $2 * (idxEl + 1)$, converted into (index + 1) << 1
-- getHeightTree // $log_2 (elCount + 1) - 1$, log is heavy so I wrote a shifter till we get this.
-- getSecondLastHeightStartIndex // Calculate the second last height starting index, this is just $(2^h - 1) - 1$
-- buildMaxHeap
-- maxHeapify
+
+* getChildLeftIndex // $2 * idxEl + 1$, converted into (index << 1) + 1
+* getChildRightIndex // $2 * (idxEl + 1)$, converted into (index + 1) << 1
+* getHeightTree // $log_2 (elCount + 1) - 1$, log is heavy so I wrote a shifter till we get this.
+* getSecondLastHeightStartIndex // Calculate the second last height starting index, this is just $(2^h - 1) - 1$
+* buildMaxHeap
+* maxHeapify
 
 ### 1.4.4.1 C++ Code
 
