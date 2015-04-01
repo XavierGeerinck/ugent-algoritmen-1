@@ -34,7 +34,7 @@ For the implementation check paragraph `§3.4`.
 - Not adaptive
 
 ## 1.3.3. Performance
-The performance analysis is really easy for selection sort, it will always perform $$n^2$$ because we loop the list no matter what.
+The performance analysis is really easy for selection sort, it will always perform $n^2$ because we loop the list no matter what.
 
 |Worst Case|Average Case|Best Case|
 |-|-|-|
