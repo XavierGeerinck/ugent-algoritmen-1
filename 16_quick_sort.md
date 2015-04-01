@@ -80,6 +80,35 @@ which translates into:
 $$T(n) = O(n*lg(n))$$
 
 ### 1.6.3.2. Average Case
+* Happens when pivot is in the middle of the elements
+
+The average case is something that is really tricky for quick sort. If we take the previous point about the pivot being in the middle of the elements into consideration, then we get that the execution time becomes:
+
+$$T(n) = cn + \frac{1}{n}\sum^n_{i = 1}(T(i - 1) + T(n - i))$$
+
+Because the most terms appear twice we get:
+
+$$T(n) = cn + \frac{2}{n}\sum^{n - 1}_{i = 0}T(i)$$
+
+Hard sum, but by using full history recurrence we are able to remove it by subtracting it with the same formula off $$T(n - 1)$$. And multiplying it with n.
+
+$$nT(n) - (n - 1)T(n - 1) = c(2n - 1) + 2T(n - 1)$$
+
+Remove the c:
+
+$$nT(n) = (n + 1)T(n - 1) + 2cn$$
+
+Now we perform the classic technique telescoping after we divided both terms by $$n(n + 1)$$:
+
+$$\frac{T(n)}{n + 1} = \frac{T(n - 1)}{n} + \frac{2c}{n + 1}$$
+
+$$\frac{T(n - 1)}{n} = \frac{T(n - 2)}{n - 1} + \frac{2c}{n}$$
+
+$$\frac{T(2)}{3} = \frac{T(1)}{2} + \frac{2c}{3}$$
+
+$$\frac{T(n)}{n + 1} = \frac{T(1)}{2} + 2c\sum^n_{i = 2}\frac{1}{i + 1} < 2c\sum^n_{i = 1} = 2cH_n$$
+
+The last number is the harmonic number, this has the alue $$ln(n) + O(1)$$. This results in $$O(n*lg(n))$$.
 
 ### 1.6.3.3. Worst Case
 * One of the 2 parts is just one element
@@ -92,7 +121,7 @@ $$T(2) = c(2) + T(1) + T(1)$$
 Count everything together:
 $$T(n) = c(n + (n - 1) + ... + 3 + 2) + nT(1)$$
 
-This results into our performance becoming $$O(n^2)$$ which is just as bad as insertion sort.
+This results into our performance becoming $$O(n^2)$$ which is just as bad as insertion sort. We can evade this problem if our pivot has been placed correctly.
 
 ## 1.6.4. Implementation
 QuickSort has 2 main steps, the partition step and the recursion step.
