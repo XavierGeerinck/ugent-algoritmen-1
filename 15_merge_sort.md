@@ -26,6 +26,26 @@ For the implementation check paragraph `§5.4`.
 |-|-|-|
 |O(n log n)|O(n log n)|O(n log n)|
 
+For the performance of merge sort we will go out from the assumption that $$n = 2^k$$. This is because we can then split the table in 2 every time.
+
+$$T(n) = 2T(n / 2) + cn$$
+
+cn stands for the number of operations needed for merging. This is because merging 2 sub tables is $$\Theta(n_1 + n_2)$$. Now to solve this equation we will just divide both terms by n.
+
+$$\frac{T(n)}{n} = \frac{T(n / 2)}{n / 2} + c$$
+
+And we keep on doing this (recursion) because we need the table to become 1 element big.
+
+$$\frac{T(n/2)}{n/2} = \frac{T(n / 4)}{n / 4} + c$$
+$$\frac{T(n/4)}{n/4} = \frac{T(n / 8)}{n / 8} + c$$
+$$\frac{T(2)}{2} = \frac{T(1)}{1} + c$$
+
+On the end we just add them both together and we get: 
+
+$$\frac{T(n)}{n} = T(1) + ck$$
+
+Because $$T(1)$$ is a constant we can say that $$T(n) = O(n*lg(n))$$. Also when n is not a power of 2, then we get the same result.
+
 ## 1.5.4. Implementation
 Implementing this algorithm is not so hard if you know how to, you need to keep 2 methods in mind:
 - Merge (Combines 2 arrays with each other)
