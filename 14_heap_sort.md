@@ -1,5 +1,5 @@
 # 1.4. Heap Sort
-Heap sort works by using the heap datastructure. This sorting algorithm has a performance of $$O(n*log(n))$$ which makes it fast.
+Heap sort works by using the heap datastructure. This sorting algorithm has a performance of $O(n*log(n))$ which makes it fast.
 
 ## 1.4.1. How
 Heapsort works by first creating the heap datastructure, so let's say we have an array, it will then convert this array into a heap datastructure which is a tree from top to bottom from left to right with our elements.
@@ -19,8 +19,8 @@ For the implementation check paragraph `§4.4`.
 ## 1.4.2. Advantages and Disadvantages
 
 **Advantages**
-- $$O(1)$$ extra space
-- $$O(n*lg(n))$$ performance
+- $O(1)$ extra space
+- $O(n*lg(n))$ performance
 
 **Disadvantages**
 - Can be hard to implement if you do not understand it completely.
@@ -63,11 +63,11 @@ $$
 T(n) \leq 2 + 2^{h+1}(h-1)
 $$
 
-Since $$2^h \leq n \le 2^{h+1}$$ we get that:
+Since $2^h \leq n \le 2^{h+1}$ we get that:
 
 $$T(n) \leq 2n lg(n) + 2$$ 
 
-which results into a $$O(n*lg(n))$$ algorithm in the worst case.
+which results into a $O(n*lg(n))$ algorithm in the worst case.
 
 Note that the performance is the same for all the trees, we will always have to go down and keep repeating this n log n times no matter what.
 
@@ -75,10 +75,10 @@ Note that the performance is the same for all the trees, we will always have to 
 The way I started on implementing this algorithm is by drawing it out on a paper step by step, variable by variable.
 
 Once you do that you can see that the trick is to have some sub-methods and finding the correct indexes for this method. By this I found that my methods were:
-- getChildLeftIndex // $$2 * idxEl + 1$$, converted into (index << 1) + 1
-- getChildRightIndex // $$2 * (idxEl + 1)$$, converted into (index + 1) << 1
-- getHeightTree // $$log_2 (elCount + 1) - 1$$, log is heavy so I wrote a shifter till we get this.
-- getSecondLastHeightStartIndex // Calculate the second last height starting index, this is just $$(2^h - 1) - 1$$
+- getChildLeftIndex // $2 * idxEl + 1$, converted into (index << 1) + 1
+- getChildRightIndex // $2 * (idxEl + 1)$, converted into (index + 1) << 1
+- getHeightTree // $log_2 (elCount + 1) - 1$, log is heavy so I wrote a shifter till we get this.
+- getSecondLastHeightStartIndex // Calculate the second last height starting index, this is just $(2^h - 1) - 1$
 - buildMaxHeap
 - maxHeapify
 
