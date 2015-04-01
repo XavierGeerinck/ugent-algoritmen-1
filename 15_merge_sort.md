@@ -12,11 +12,13 @@ For the implementation check paragraph `§5.4`.
 ## 1.5.2. Advantages and Disadvantages
 
 **Advantages**
+
 * Stable
 * $\Theta(n*lg(n))$ Performance
 * Doesn't need random access to data
 
 **Disadvantages**
+
 * Not adaptive
 * $\Theta(n)$ extra space normal
 * $\Theta(lg(n))$ Extra space for LinkedLists
@@ -48,6 +50,7 @@ Because $$T(1)$$ is a constant we can say that $T(n) = O(n*lg(n))$. Also when n 
 
 ## 1.5.4. Implementation
 Implementing this algorithm is not so hard if you know how to, you need to keep 2 methods in mind:
+
 * Merge (Combines 2 arrays with each other)
 * MergeSort (Main method, accepts a dataset, splits it and calls this method for those 2 splitted parts)
 
