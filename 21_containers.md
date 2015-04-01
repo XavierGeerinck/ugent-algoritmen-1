@@ -49,5 +49,15 @@
 
 # 2.6. Priority Queue
 
-* 
+* Several operations:
+    * Add
+    * Remove
+    * isEmpty
+* Different implementations:
+    * Sorted table: Sort by priority, highest priority is O(1), smallest is O(n)
+    * Unsorted table: Adding is O(1), removing is O(n).
+    * Binary Tree: Adding and removing is O(lg(n)), biggest priority is the root.
+    * D-heap: tree with d childs, height is $log_d(n)$. Adding is $lg(d)$ and descending is $O(d*log_d(n))$.
+    * Other: Sometimes needed to merge queues.
+
 # 2.7. Tree
