@@ -55,9 +55,11 @@ For the implementation check paragraph `§6.4`.
 ## 1.6.2. Advantages and Disadvantages
 
 **Advantages**
+
 * Fast overall
 
 **Disadvantages**
+
 * Not stable
 * $O(lg(n))$ extra space
 * $\Theta(n^2))$ performance in the worst case
@@ -71,6 +73,7 @@ For the implementation check paragraph `§6.4`.
 Note that the performance goes towards $O(n)$ using a three-way partition and equal keys.
 
 ### 1.6.3.1. Best Case
+
 * Both parts are the same size
 
 $T(n) = cn + 2T(\frac{n}{2})$
@@ -80,6 +83,7 @@ which translates into:
 $T(n) = O(n*lg(n))$
 
 ### 1.6.3.2. Average Case
+
 * Happens when pivot is in the middle of the elements
 
 The average case is something that is really tricky for quick sort. If we take the previous point about the pivot being in the middle of the elements into consideration, then we get that the execution time becomes:
@@ -111,6 +115,7 @@ $$\frac{T(n)}{n + 1} = \frac{T(1)}{2} + 2c\sum^n_{i = 2}\frac{1}{i + 1} < 2c\sum
 The last number is the harmonic number, this has the value $ln(n) + O(1)$. This results in $O(n*lg(n))$.
 
 ### 1.6.3.3. Worst Case
+
 * One of the 2 parts is just one element
 
 $$T(n) = cn + T(1) + T(n - 1)$$
