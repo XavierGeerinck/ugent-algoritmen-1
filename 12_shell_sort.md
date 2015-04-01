@@ -65,12 +65,12 @@ For the implementation check paragraph `§3.4`.
 ## 1.2.2. Advantages and Disadvantages
 
 **Advantages**
-- Requires $O(1)$ extra space
-- Performance of $O(n^{7/6})$ for the best currently known sequence
-- $O(n * lg(n))$ when almost sorted.
+* Requires $O(1)$ extra space
+* Performance of $O(n^{7/6})$ for the best currently known sequence
+* $O(n * lg(n))$ when almost sorted.
 
 **Disadvantages**
-- Not stable
+* Not stable
 
 ## 1.2.3. Performance
 |Worst Case|Average Case|Best Case|
