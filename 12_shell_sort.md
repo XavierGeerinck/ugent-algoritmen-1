@@ -75,7 +75,7 @@ For the implementation check paragraph `§3.4`.
 ## 1.2.3. Performance
 |Worst Case|Average Case|Best Case|
 |-|-|-|
-|O(n^{7/6})|-|O(n log<sup>2</sup> n)|
+|$$O(n^{7/6})$$|-|$$O(n * log^2(n))$$|
 
 ### 1.2.3.1. Worst Case
 The performance of ShellSort depends on the used gap sequence, because the best gap sequence is not yet known. We are unable to say which the best case is. Currently one of the best gap sequences is the one of Tokuda (1992): $$k_i = \frac{9^5 - 4^k}{5 * 4^{k - 1}}$$ with a performance of $$O(n^{7/6})$$.
