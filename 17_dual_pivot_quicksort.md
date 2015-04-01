@@ -38,12 +38,14 @@ For the implementation check paragraph `§1.4`.
 ## 1.7.2. Advantages and Disadvantages
 
 **Advantages**
-- Faster than normal QuickSort
-- Less chance to hit the worst case scenario
-- Requires less swaps ($$1.9 * ln(n) * n$$ average)
+
+* Faster than normal QuickSort
+* Less chance to hit the worst case scenario
+* Requires less swaps ($$1.9 * ln(n) * n$$ average)
 
 **Disadvantages**
-- Requires more swaps ($$0.6 * ln(n) * n$$)
+
+* Requires more swaps ($$0.6 * ln(n) * n$$)
 
 ## 1.7.3. Performance
 |Worst Case|Average Case|Best Case|
