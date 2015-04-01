@@ -55,13 +55,13 @@ For the implementation check paragraph `§6.4`.
 ## 1.6.2. Advantages and Disadvantages
 
 **Advantages**
-- Fast overall
+* Fast overall
 
 **Disadvantages**
-- Not stable
-- $O(lg(n))$ extra space
-- $\Theta(n^2))$ performance in the worst case
-- Not adaptive
+* Not stable
+* $O(lg(n))$ extra space
+* $\Theta(n^2))$ performance in the worst case
+* Not adaptive
 
 ## 1.6.3. Performance
 |Worst Case|Average Case|Best Case|
