@@ -70,6 +70,30 @@ For the implementation check paragraph `§6.4`.
 
 Note that the performance goes towards $$O(n)$$ using a three-way partition and equal keys.
 
+### 1.6.3.1. Best Case
+* Both parts are the same size
+
+$$T(n) = cn + 2T(\frac{n}{2})$$
+
+which translates into:
+
+$$T(n) = O(n*lg(n))$$
+
+### 1.6.3.2. Average Case
+
+### 1.6.3.3. Worst Case
+* One of the 2 parts is just one element
+
+$$T(n) = cn + T(1) + T(n - 1)$$
+$$T(n - 1) = c(n - 1) + T(1) + T(n - 2)$$
+$$T(n - 2) = c(n - 2) + T(1) + T(n - 3)$$
+$$T(2) = c(2) + T(1) + T(1)$$
+
+Count everything together:
+$$T(n) = c(n + (n - 1) + ... + 3 + 2) + nT(1)$$
+
+This results into our performance becoming $$O(n^2)$$ which is just as bad as insertion sort.
+
 ## 1.6.4. Implementation
 QuickSort has 2 main steps, the partition step and the recursion step.
 
