@@ -40,14 +40,14 @@ and this is Insertion sort. For the implementation check paragraph `§1.4`.
 
 ## 1.1.2. Advantages and Disadvantages
 **Advantages**
-- Easy to implement
-- O(n) performance when almost sorted
-- O(1) Extra space
-- Low overhead
-- Stable
+* Easy to implement
+* O(n) performance when almost sorted
+* O(1) Extra space
+* Low overhead
+* Stable
 
 **Disadvantages**
-- O($n^2$)
+* O($n^2$)
 
 ## 1.1.3. Performance
 |Worst Case|Average Case|Best Case|
