@@ -2,7 +2,7 @@
 Shellsort is a more refined version of insertion sort. This algorithm will change our array from completely random unsorted data to partially sorted data so that insertion sort may work faster.
 
 ## 1.2.1. How
-This algorithm works by using increments, the increments can be found [here](http://en.wikipedia.org/wiki/Shellsort). For this Article I will make us of the increment $$N/2^k$$.
+This algorithm works by using increments, the increments can be found [here](http://en.wikipedia.org/wiki/Shellsort). For this Article I will make us of the increment $N/2^k$.
 
 What we do with the increments is we keep applying it till we get 1 as an increment, once we have 1 we know we are using the last insertion sort.
 
@@ -65,9 +65,9 @@ For the implementation check paragraph `§3.4`.
 ## 1.2.2. Advantages and Disadvantages
 
 **Advantages**
-- Requires $$O(1)$$ extra space
-- Performance of $$O(n^{7/6})$$ for the best currently known sequence
-- $$O(n * lg(n))$$ when almost sorted.
+- Requires $O(1)$ extra space
+- Performance of $O(n^{7/6})$ for the best currently known sequence
+- $O(n * lg(n))$ when almost sorted.
 
 **Disadvantages**
 - Not stable
@@ -75,10 +75,10 @@ For the implementation check paragraph `§3.4`.
 ## 1.2.3. Performance
 |Worst Case|Average Case|Best Case|
 |-|-|-|
-|$$O(n^{7/6})$$|-|$$O(n * log^2(n))$$|
+|$O(n^{7/6})$|-|$O(n * log^2(n))$|
 
 ### 1.2.3.1. Worst Case
-The performance of ShellSort depends on the used gap sequence, because the best gap sequence is not yet known. We are unable to say which the best case is. Currently one of the best gap sequences is the one of Tokuda (1992): $$k_i = \frac{9^5 - 4^k}{5 * 4^{k - 1}}$$ with a performance of $$O(n^{7/6})$$.
+The performance of ShellSort depends on the used gap sequence, because the best gap sequence is not yet known. We are unable to say which the best case is. Currently one of the best gap sequences is the one of Tokuda (1992): $k_i = \frac{9^5 - 4^k}{5 * 4^{k - 1}}$ with a performance of $O(n^{7/6})$.
 
 ## 1.2.4. Implementation
 ### 1.2.4.1 Pseudo Code
