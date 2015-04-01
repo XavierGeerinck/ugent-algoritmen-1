@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* Algorithms  
+* Algorithms
    * [Insertion Sort](11_insertion_sort.md)
    * [Shell Sort](12_shell_sort.md)
    * [Selection Sort](13_selection_sort.md)
@@ -10,5 +10,6 @@
    * [Quick Sort](16_quick_sort.md)
    * [Dual Pivot QuickSort](17_dual_pivot_quicksort.md)
    * [Radix Exchange Sort](18_radix_exchange_sort.md)
-* Data Structures  
+* Data Structures
+   * Containers
 
