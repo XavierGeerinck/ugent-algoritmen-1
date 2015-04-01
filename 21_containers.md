@@ -60,4 +60,10 @@
     * D-heap: tree with d childs, height is $log_d(n)$. Adding is $lg(d)$ and descending is $O(d*log_d(n))$.
     * Other: Sometimes needed to merge queues.
 
+## 2.6.1. DES
+DES stands for Discrete Event Simulation. Here we will simulate a machine that divides different tasks over multiple machines. When a task is then done they will get merged. Simulating these tasks helps us to see which machines we need to buy.
+
+DES works with discrete events, these happen on a specific moment in time. These events are handled one by one. Some events are dependent on each other, because of this we might need to wait till they are finished.
+
+
 # 2.7. Tree
