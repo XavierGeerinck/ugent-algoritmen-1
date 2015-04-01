@@ -25,12 +25,12 @@ For the implementation check paragraph `§3.4`.
 ## 1.3.2. Advantages and Disadvantages
 
 **Advantages**
-- Uses almost no swaps! $$\Theta(n)$$
-- No extra space required, $$O(n)$$
+- Uses almost no swaps! $\Theta(n)$
+- No extra space required, $O(n)$
 
 **Disadvantages**
 - Not Stable
-- $$O(n^2)$$ performance
+- $O(n^2)$ performance
 - Not adaptive
 
 ## 1.3.3. Performance
