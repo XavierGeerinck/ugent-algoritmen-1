@@ -1,5 +1,5 @@
 # 1.6. Quick Sort
-QuickSort is also a **Divide And Conquer** algorithm with a performance of $$O(n * log(n))$$, however in the worst case this becomes $$O(n^2)$$.
+QuickSort is also a **Divide And Conquer** algorithm with a performance of $O(n * log(n))$, however in the worst case this becomes $O(n^2)$.
 
 ## 1.6.1. How
 We start by picking an element which is called the **pivot**, then we will rearrange the array so that every element smaller than the pivot will be on the left of the pivot and all elements larger than the pivot will be on the right. this operation is called the **partitioning**.
@@ -59,8 +59,8 @@ For the implementation check paragraph `§6.4`.
 
 **Disadvantages**
 - Not stable
-- $$O(lg(n))$$ extra space
-- $$\Theta(n^2))$$ performance in the worst case
+- $O(lg(n))$ extra space
+- $\Theta(n^2))$ performance in the worst case
 - Not adaptive
 
 ## 1.6.3. Performance
@@ -68,16 +68,16 @@ For the implementation check paragraph `§6.4`.
 |-|-|-|
 |O(n<sup>2</sup>|O(n log n)|O(n log n)|
 
-Note that the performance goes towards $$O(n)$$ using a three-way partition and equal keys.
+Note that the performance goes towards $O(n)$ using a three-way partition and equal keys.
 
 ### 1.6.3.1. Best Case
 * Both parts are the same size
 
-$$T(n) = cn + 2T(\frac{n}{2})$$
+$T(n) = cn + 2T(\frac{n}{2})$
 
 which translates into:
 
-$$T(n) = O(n*lg(n))$$
+$T(n) = O(n*lg(n))$
 
 ### 1.6.3.2. Average Case
 * Happens when pivot is in the middle of the elements
@@ -90,7 +90,7 @@ Because the most terms appear twice we get:
 
 $$T(n) = cn + \frac{2}{n}\sum^{n - 1}_{i = 0}T(i)$$
 
-Hard sum, but by using full history recurrence we are able to remove it by subtracting it with the same formula off $$T(n - 1)$$. And multiplying it with n.
+Hard sum, but by using full history recurrence we are able to remove it by subtracting it with the same formula off $T(n - 1)$. And multiplying it with n.
 
 $$nT(n) - (n - 1)T(n - 1) = c(2n - 1) + 2T(n - 1)$$
 
@@ -98,7 +98,7 @@ Remove the c:
 
 $$nT(n) = (n + 1)T(n - 1) + 2cn$$
 
-Now we perform the classic technique telescoping after we divided both terms by $$n(n + 1)$$:
+Now we perform the classic technique telescoping after we divided both terms by $n(n + 1)$:
 
 $$\frac{T(n)}{n + 1} = \frac{T(n - 1)}{n} + \frac{2c}{n + 1}$$
 
@@ -108,7 +108,7 @@ $$\frac{T(2)}{3} = \frac{T(1)}{2} + \frac{2c}{3}$$
 
 $$\frac{T(n)}{n + 1} = \frac{T(1)}{2} + 2c\sum^n_{i = 2}\frac{1}{i + 1} < 2c\sum^n_{i = 1} = 2cH_n$$
 
-The last number is the harmonic number, this has the alue $$ln(n) + O(1)$$. This results in $$O(n*lg(n))$$.
+The last number is the harmonic number, this has the value $ln(n) + O(1)$. This results in $O(n*lg(n))$.
 
 ### 1.6.3.3. Worst Case
 * One of the 2 parts is just one element
@@ -121,14 +121,14 @@ $$T(2) = c(2) + T(1) + T(1)$$
 Count everything together:
 $$T(n) = c(n + (n - 1) + ... + 3 + 2) + nT(1)$$
 
-This results into our performance becoming $$O(n^2)$$ which is just as bad as insertion sort. We can evade this problem if our pivot has been placed correctly.
+This results into our performance becoming $O(n^2)$ which is just as bad as insertion sort. We can evade this problem if our pivot has been placed correctly.
 
 ## 1.6.4. Implementation
-QuickSort has 2 main steps, the partition step and the recursion step.
+Quick Sort has 2 main steps, the partition step and the recursion step.
 
 In the partition step we will put every element smaller than the pivot at the left, and every element larger than the pivot at the right.
 
-Then we will recursively call our QuickSort method till we got a sorted array.
+Then we will recursively call our Quick Sort method till we got a sorted array.
 
 ### 1.6.4.1 C++ Code
 
