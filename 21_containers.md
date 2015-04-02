@@ -66,4 +66,25 @@ DES stands for Discrete Event Simulation. Here we will simulate a machine that d
 DES works with discrete events, these happen on a specific moment in time. These events are handled one by one. Some events are dependent on each other, because of this we might need to wait till they are finished.
 
 
-# 2.7. Tree
+## 2.7. Tree
+![](treedefinition.gif)
+
+* One of the most important datastructures.
+* A tree has nodes and edges that are connected to each other
+* There are no loops!
+* Most of the time 1 root node
+* Every node is a sub tree
+* Some algorithms use a collection of trees == forest
+* Amount of children is the grade of the node
+* A full tree is if we have n children for an n tree on the depth given.
+* We use a table as implementation 
+* 3 Different ways to perform a tree walk (means that we will go over the nodes recursively, this also uses a stack):
+    * **inorder**: First left child, then root and then the right child. 
+    * **preorder**: First root, then left child and then the right child
+    * **postorder**: First left child, then right child and then the root.
+
+![](traversal1.png)
+
+* We can also go through the tree from the top to the bottom from left to right, this is called level order.
+
+A special algorithm used with trees is backtracking, for this please see the next chapter.
