@@ -10,6 +10,6 @@
     * Neighbour matrix: takes a connection (i,j) and represents it on a square neighbourmatrix. This value can be logical or can be the weight. The problem is that matrices take a lot of memory en the initialisation takes $$\Theta(n^2)$$ operations.
     * Neighbour lists: Mostly used when we do not have a lot of connections (m << $$n^2$$). In reality most graphs are like this. The neighbours of every node are saved in a neighbour list and the graph is represented by a table of n neighbourlists.
 
-This picture shows a normal graph, it's neighbour list and the neighbour matrix
+These pictures show a normal graph, it's neighbour list and the neighbour matrix
 
 ![](Screen Shot 2015-04-02 at 13.21.33.png)![](Screen Shot 2015-04-02 at 13.21.39.png)
