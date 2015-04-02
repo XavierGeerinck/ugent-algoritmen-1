@@ -12,5 +12,5 @@
    * [Radix Exchange Sort](18_radix_exchange_sort.md)
 * Data Structures
    * [Containers](21_containers.md)
-   * Backtracking with Trees
+   * [Backtracking with Trees](22_backtracking_with_trees.md)
 
