@@ -13,4 +13,5 @@
 * Data Structures
    * [Containers](21_containers.md)
    * [Backtracking with Trees](22_backtracking_with_trees.md)
+   * Graphs
 
