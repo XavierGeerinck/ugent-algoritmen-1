@@ -17,7 +17,7 @@ These pictures show a normal graph, it's neighbour list and the neighbour matrix
 Looping through a graph is different then looping through a tree, this because a graph has multiple pathways and we have to find a way to only go through each path once.
 
 For this looping we have several methods:
-1. Depth-first searching: This is analog to recursive searching in a tree. We start at any node and we continue forward. It also keeps a log of the already visited nodes so we do not visit them twice. On the end we discover the remaining nodes.
+## 2.8.1. Depth-first searching: This is analog to recursive searching in a tree. We start at any node and we continue forward. It also keeps a log of the already visited nodes so we do not visit them twice. On the end we discover the remaining nodes.
 
 ```c++
 void check_node(int i) {
@@ -44,3 +44,5 @@ void depth_first_search() {
     }
 }
 ```
+
+We have discovered a
