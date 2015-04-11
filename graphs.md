@@ -53,4 +53,4 @@ We have 4 different sorts of nodes with their connections:
 3. A connection with a black node. (forward edge)
 4. A connection with a black node without heir (cross edge).
 
-## 2.8.1. Depth-first searching
+## 2.8.2. Width-first searching
