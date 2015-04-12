@@ -54,4 +54,13 @@ For some specific problems there are more efficient variants:
 * **Searching in cyclic ordered sequence:** if we compare 2 elements xl and xr with each other, if xl < xr then i is not l < i <= r because xi is the smallest element. If xl > xr then i has to be l < i <= r. By choosing l and r correctly we are able to eliminate 50% of the elements. This causes the algorithm to have a performance of $$O(lg(n))$$.
 * **Searching in ordered sequence of unknown length:** Let's say we have to find element y in a ascending ordered sequence of unknown length. Now we first search for an element that is not < than y. We also compare y with x1, if y <= x1, than y can only be equal to x1. If not then we compare y with x2, en after that with x4, x8, ... Now we are doubling the range so that we go past y fast. Now we just need $$\Theta(lg(j))$$ equations to find index j for y <= xj.
 
-### 2.9.4.3. Interpolating Search
+### 2.9.4.3. Interpolation Search
+We are going to search a uniform sorted array by estimating the next position to check based on linear interpolation of the search key and the values at the ends of the search interval.
+
+The average run time for this is $$O(log(log(n)))$$
+
+#### Adding elements
+When we found the place we can add the element by moving 50% of the table. Performance here is $$O(n)$$.
+
+#### Removing elements
+As with adding elements we will have to move 50% of the table. So also $$O(n)$$.
