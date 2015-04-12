@@ -17,8 +17,10 @@ These pictures show a normal graph, it's neighbour list and the neighbour matrix
 Looping through a graph is different then looping through a tree, this because a graph has multiple pathways and we have to find a way to only go through each path once.
 
 For this looping we have several methods:
-## 2.8.1. Depth-first searching
+## 2.8.1. Depth-first searching (DFS)
 This is analog to recursive searching in a tree. We start at any node and we continue forward. It also keeps a log of the already visited nodes so we do not visit them twice. On the end we discover the remaining nodes.
+
+DFS is used to solve problems that have one solution, such as finding the way out of a maze.
 
 ```c++
 void check_node(int i) {
@@ -52,5 +54,6 @@ We have 4 different sorts of nodes with their connections:
 2. A Connection with a gray node. (back edge)
 3. A connection with a black node. (forward edge)
 4. A connection with a black node without heir (cross edge).
+
 
 ## 2.8.2. Width-first searching
