@@ -67,9 +67,14 @@ As with adding elements we will have to move 50% of the table. So also $$O(n)$$.
 
 ## 2.9.3. List
 ### 2.9.3.1. Unordered List
-* Searching: Sequential, so O(n)
-* Adding: At front, so O(1)
-* Removing: After searching this is O(1)
+* **Searching:** Sequential, so O(n)
+* **Adding:** At front, so O(1)
+* **Removing:** After searching this is O(1)
 
 ### 2.9.3.2. List ordered by search chance
-The best order here is descending chance order. If we don't know this then we try to find the optimal order dynamically by switching a found key with it's predecessor. 
+The best order here is descending chance order. If we don't know this then we try to find the optimal order dynamically by switching a found key with it's predecessor (transpose). Or by moving it to the front (move to front). The first way is better but the second way is faster.
+
+### 2.9.3.3. Ordered list
+* **Searching:** Ordering only improves the average search time, but the performance stays O(n)
+* **Adding:** We have to go through the list this time, so this becomes O(n)
+* **Removing:** Same as adding.
