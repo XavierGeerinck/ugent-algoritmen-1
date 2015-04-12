@@ -96,4 +96,4 @@ We can divide the connections into classes as we did with DFS:
 * BackEdge: Connection with ascendant.
 * CrossEdge: Connection with no ascendants and descendants.
 
-Note that we can not have forward edges, this because we start from a root node and go downwards.
+> Note that we can not have forward edges, this because we start from a root node and go downwards.
