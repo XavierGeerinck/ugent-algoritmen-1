@@ -67,3 +67,33 @@ We get Θ(n + m) for neighbor and Θ(n + m<sup>2</sup>) = Θ(n<sup>2</sup>) for 
 
 ## 2.8.2. Breadth-first search (BFS)
 Start at the tree root, or a node chosen as the root. It will then start exploring the neighbors first, before moving to the next level neighbors.
+
+![](200px-Breadth-first-tree.svg.png)
+
+To traverse this we will use a queue, this because we need to know which nodes are already discovered and which one aren't.
+
+### PseudoCode
+
+**Input:** Graph G, Vertice of G called v.
+
+**Output:** All vertices reachable from v labeled as discovered.
+
+    procedure BFS(G,v) is
+          let Q be a queue
+          Q.enqueue(v)
+          label v as discovered
+          while Q is not empty
+             v ← Q.dequeue()
+             for all edges from v to w in G.adjacentEdges(v) do
+                 if w is not labeled as discovered
+                     Q.enqueue(w)
+                     label w as discovered
+                     
+### Classes
+We can divide the connections into classes as we did with DFS:
+
+* TreeNode: Connection with undiscovered node
+* BackEdge: Connection with ascendant.
+* CrossEdge: Connection with no ascendants and descendants.
+
+Note that we can not have forward edges, this because we start from a root node and go downwards.
