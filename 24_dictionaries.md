@@ -26,3 +26,27 @@ We order the table, for example in top down order. We now have several operation
 This method is faster if we want to know if an element appears in the table, this because when a value is bigger then our current then we can stop searching. This method however is not faster if we found the value, which is why we use the other methods more.
 
 ### 2.9.4.2. Binary Search
+Compare the key we are looking for with the key of the middle element. Now we look further in the left or right sub table. This gives us a performance of $$O(lg(n))$$.
+
+```c++
+int binary_search(int s, const vector<int> &v) {
+    // v is not empty
+    // if found, return index
+    // if not found, return -1
+    int l = 0, r = v.size() - 1;
+    
+    // Invariant: v[l] <= s <= v[r]
+    while (l < r) {
+        int m = l + (r - l) / 2; // l <= m < r
+        
+        if (s <= v[m]) 
+            r = m;
+        else
+            l = m + 1;
+    }
+    
+    return s == v[l] ? l : -1;
+}
+```
+
+### 2.9.4.3. Interpolating Search
