@@ -4,13 +4,13 @@
 * Has a collection of m edges
 * The nodes represent objects with connections
 * Can have a direction.
-* The grade of a node is the amount of neighbours of that node.
-* For a graph with a direction, we have an ingrade, this is the amount of incoming neighbours. The same goes for the outgrade which is the amount of outgoing neighbours.
+* The grade of a node is the amount of neighbors of that node.
+* For a graph with a direction, we have an ingrade, this is the amount of incoming neighbors. The same goes for the outgrade which is the amount of outgoing neighbours.
 * 2 Basic representations of graphs:
-    * Neighbour matrix: takes a connection (i,j) and represents it on a square neighbourmatrix. This value can be logical or can be the weight. The problem is that matrices take a lot of memory en the initialisation takes $$\Theta(n^2)$$ operations.
-    * Neighbour lists: Mostly used when we do not have a lot of connections (m << $$n^2$$). In reality most graphs are like this. The neighbours of every node are saved in a neighbour list and the graph is represented by a table of n neighbourlists.
+    * Neighbor matrix: takes a connection (i,j) and represents it on a square neighbormatrix. This value can be logical or can be the weight. The problem is that matrices take a lot of memory en the initialization takes $$\Theta(n^2)$$ operations.
+    * Neighbor lists: Mostly used when we do not have a lot of connections (m << $$n^2$$). In reality most graphs are like this. The neighbors of every node are saved in a neighbor list and the graph is represented by a table of n neighbor-lists.
 
-These pictures show a normal graph, it's neighbour list and the neighbour matrix
+These pictures show a normal graph, it's neighbor list and the neighbor matrix
 
 ![](Screen Shot 2015-04-02 at 13.21.33.png)![](Screen Shot 2015-04-02 at 13.21.39.png)
 
@@ -26,7 +26,7 @@ DFS is used to solve problems that have one solution, such as finding the way ou
 void check_node(int i) {
     discovered[i] = true;
     
-    for (every neighbour j of node i) {
+    for (every neighbor j of node i) {
         if (!discovered[j]) {
             check_node(j);
         }
@@ -48,12 +48,22 @@ void depth_first_search() {
 }
 ```
 
-We have 4 different sorts of nodes with their connections:
+The output of DFS can be expressed as a spanning tree. Based on this we can divide the original graph into several classes:
 
-1. Connection with not yet discovered branch (tree edge). when not every branch is discovered then we have a forest, else we have a spanning tree.
-2. A Connection with a gray node. (back edge)
-3. A connection with a black node. (forward edge)
-4. A connection with a black node without heir (cross edge).
+![](412px-Tree_edges.svg.png)
 
+* **Forward Edges**: Point from node to a descendant.
+* **Back Edges**: Points from node to an ascendant.
+* **Cross Edges**: Points to neither.
+* **Tree Edges**: Appears sometimes, belongs to the spanning tree and are classified separately from forward edges.
 
-## 2.8.2. Width-first searching
+### Performance:
+The performance is determined by how the graph is represented:
+* Θ(n) operations on initialisation
+* We start searching from where we stopped, so Θ(n) for the second for.
+* We discover every node once, Θ(n)
+
+We get Θ(n + m) for neighbor and Θ(n + m<sup>2</sup>) = Θ(n<sup>2</sup>) for the neighbor matrix.
+
+## 2.8.2. Breadth-first search (BFS)
+Start at the tree root, or a node chosen as the root. It will then start exploring the neighbors first, before moving to the next level neighbors.
