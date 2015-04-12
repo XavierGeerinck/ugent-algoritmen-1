@@ -97,3 +97,18 @@ We can divide the connections into classes as we did with DFS:
 * CrossEdge: Connection with no ascendants and descendants.
 
 > We can not have forward edges, this because we start from a root node and go downwards.
+
+### Applications
+BFS has many applications, some of them are:
+
+* Testing a graph for it's bipartiteness.
+* Finding loops in undirected graphs.
+* Finding the shortest path between 2 nodes u and v.
+
+### Performance
+
+* Initialisation: $$\Theta(n)$$
+* We put elements on queue and dequeue them, these operations are O(1), so we get $$\Theta(n)$$
+* We go through each neighbor, this is $$\Theta(n)$$ for the neighbor lists and $$\Theta(n^2)$$ for the neighbor matrix.
+
+So depending on the way we represent the graph we get $$\Theta(n + m)$$ for the list and $$\Theta(n^2)$$ for the matrix.
