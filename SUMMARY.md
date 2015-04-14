@@ -15,4 +15,5 @@
    * [Backtracking with Trees](22_backtracking_with_trees.md)
    * [Graphs](graphs.md)
    * [Dictionaries](24_dictionaries.md)
+   * HashTables
 
