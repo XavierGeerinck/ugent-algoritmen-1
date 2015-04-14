@@ -13,5 +13,16 @@ We will combine every key that fit into the same bucket in a LinkedList. Every L
 
 ![](450px-Hash_table_5_0_1_1_1_1_1_LL.svg.png)
 
-##### 2.10.1.2.1. Searching
-We can search by the hash value of the key, we now end up in the LinkedList containing the value that we want. If we have bad luck, then we find ourselves in a LinkedList where all the keys are collected because they have the same hash ($$O(n)$$). However in the average case when our hash is of a good quality this won't happen. We can speak of a good quality when our length of the list is $$n/m$$. This is the expectation of the individual List Length. We call this $$n/m$$ equation the load factor $$\Alpha$$.
+#### 2.10.1.2.1. Searching
+We can search by the hash value of the key, we now end up in the LinkedList containing the value that we want. If we have bad luck, then we find ourselves in a LinkedList where all the keys are collected because they have the same hash ($$O(n)$$). However in the average case when our hash is of a good quality this won't happen. We can speak of a good quality when our length of the list is $$n/m$$. This is the expectation of the individual List Length. We call this $$n/m$$ equation the load factor $$\alpha$$.
+
+#### 2.10.1.2.2. Adding
+We add a new element at the front, this because our list is not sorted. Adding is $$O(1)$$.
+
+#### 2.10.1.2.3. Removing
+If we found the element this is $$O(1)$$.
+
+### 2.10.1.3. Coalesced Chaining
+Instead of a table with lists coalesced chaining uses a table of listnodes. By using this method a table can also save a pointer to another element of the table.
+
+
