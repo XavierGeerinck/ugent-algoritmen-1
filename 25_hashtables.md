@@ -3,3 +3,12 @@ A hash table is a really efficient key-value store, it will hash the key and pla
 
 
 ![](315px-Hash_table_3_1_1_0_1_0_0_SP.svg.png)
+
+# 2.10.1. Conflict Catching
+# 2.10.1.1. Separate Chaining
+In this method we will use some sort of list of entries with the same index.
+
+# 2.10.1.2. Separate Chaining with linked lists
+We use LinkedLists here, see  the picture for how this works.
+
+
