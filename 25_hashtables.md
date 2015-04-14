@@ -79,7 +79,7 @@ By choosing a random hash function when creating a hashtable, we make it that th
 
 By using this we will reduce the chance of collision even if the data is chosen by an adversary.
 
-We say that a hash functions is chosen from a carefully chosen family of functions. To construct such a family we can for example chose a prime number when we have k keys. Then we get that the hash functions is: $$h_{a,b}(s) = ((as + b) mod p) mod m
+We say that a hash functions is chosen from a carefully chosen family of functions. To construct such a family we can for example chose a prime number when we have k keys. Then we get that the hash functions is: $$h_{a,b}(s) = ((as + b) mod p) mod m$$
 
 p = prime number<br />
 a = number between 1 and p - 1<br />
