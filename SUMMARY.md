@@ -19,4 +19,5 @@
 * Graph Algorithms
    * Algorithm of Prim
    * Algorithm of Kruskal
+   * Introduction
 
