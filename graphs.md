@@ -101,13 +101,16 @@ BFS Uses a queue structure to hold all unexplored nodes. The order in which node
                      
 ### Implementation
 ```c++
-void Graph::BFS(int numberOfVertices) {
+void Graph::BFS(int s, int numberOfVertices) {
     // Mark all vertices as not explored
     bool *explored = new bool[numberOfVertices];
 
     for (int = 0; i <= numberOfVertices; i++)
         explored[i] = false;
         
+    // Create the queue for BFS
+    list<int> queue;
+    
     // Push root vertex to the queue
     Q.enqueue(s);
     explored[s] = true; // Of course we have explored this one already
