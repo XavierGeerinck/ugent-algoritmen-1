@@ -132,7 +132,6 @@ void Graph::BFS(int sourceNode, int numberOfVertices) {
                 queue.push_back(*i);
             }
         }
-        
     }
 ```
                      
