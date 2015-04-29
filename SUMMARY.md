@@ -17,7 +17,7 @@
    * [Dictionaries](24_dictionaries.md)
    * [HashTables](25_hashtables.md)
 * Graph Algorithms
+   * Introduction
    * Algorithm of Prim
    * Algorithm of Kruskal
-   * Introduction
 
