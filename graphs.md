@@ -104,9 +104,8 @@ BFS Uses a queue structure to hold all unexplored nodes. The order in which node
 void Graph::BFS(int numberOfVertices) {
     // Mark all vertices as not explored
     bool *explored = new bool[numberOfVertices];
-    
-    // Initialize all vertices as unexplored
-    for (int = 0; i <= n; i++)
+
+    for (int = 0; i <= numberOfVertices; i++)
         explored[i] = false;
         
     // Push root vertex to the queue
