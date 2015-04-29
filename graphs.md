@@ -23,7 +23,7 @@ This is analog to recursive searching in a tree. We start at any node and we con
 DFS is used to solve problems that have one solution, such as finding the way out of a maze.
 
 ```c++
-void check_node(int i) {
+void DFSUtil(int i) {
     discovered[i] = true;
     
     for (every neighbor j of node i) {
@@ -33,7 +33,7 @@ void check_node(int i) {
     }
 }
 
-void depth_first_search() {
+void DFS() {
     // No nodes discovered
     for (int i = 0; i < n; i++) {
         discovered[i] = false;
