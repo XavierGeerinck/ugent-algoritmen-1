@@ -126,6 +126,7 @@ void Graph::BFS(int sourceNode, int numberOfVertices) {
         // Get all adjacent vertices of the dequeued vertex sourceNode
         // If a adjacent has not been explored, then mark it visited 
         // and enqueue it
+        // list<int< *adj;
         for (i = adj[sourceNode].begin(); i!= adj[s].end(); ++i) {
             if (!explored[*i]) {
                 explored[*i] = true;
