@@ -112,7 +112,7 @@ void Graph::BFS(int sourceNode, int numberOfVertices) {
     list<int> queue;
     
     // Push root vertex to the queue
-    Q.enqueue(s);
+    Q.enqueue(sourceNode);
     explored[s] = true; // Of course we have explored this one already
     
     // So as long as the queue is not empty
