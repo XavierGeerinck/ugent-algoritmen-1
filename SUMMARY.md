@@ -18,4 +18,5 @@
    * [HashTables](25_hashtables.md)
 * Graph Algorithms
    * Algorithm Of Prim
+   * Algorithm of Kruskal
 
