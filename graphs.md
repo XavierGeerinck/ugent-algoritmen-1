@@ -66,11 +66,21 @@ The performance is determined by how the graph is represented:
 We get Θ(n + m) for neighbor and Θ(n + m<sup>2</sup>) = Θ(n<sup>2</sup>) for the neighbor matrix.
 
 ## 2.8.2. Breadth-first search (BFS)
-Start at the tree root, or a node chosen as the root. It will then start exploring the neighbors first, before moving to the next level neighbors.
+### General
+Start by exploring the nodes at a given depth before proceeding to the next level. This means that we will explore the children of nodes before we proceed to the children of the children. 
+
+This is useful when we want to find the minimal path length solution, if one exists. The disadvantage is that we need to traverse the complete tree which results in a lot of nodes.
+
+### Algorithm
+BFS Uses a queue structure to hold all unexplored nodes. The order in which nodes are placed on the queue determine the type or search.
+
+1. Place root node s on the queue
+2. If queue is empty. return false and stop
+3. If first element on the queue is a goal node g. Return success and stop otherwise.
+4. Remove and expand the first element from the queue and place all the children at the end of the queue in any order.
+5. Return to step 2
 
 ![](200px-Breadth-first-tree.svg.png)
-
-To traverse this we will use a queue, this because we need to know which nodes are already discovered and which one aren't.
 
 ### PseudoCode
 
@@ -88,6 +98,34 @@ To traverse this we will use a queue, this because we need to know which nodes a
                  if w is not labeled as discovered
                      Q.enqueue(w)
                      label w as discovered
+                     
+### Implementation
+```c++
+void Graph::BFS(int numberOfVertices) {
+    // Mark all vertices as not explored
+    bool *explored = new bool[numberOfVertices];
+    
+    // Initialize all vertices as unexplored
+    for (int = 0; i <= n; i++)
+        explored[i] = false;
+        
+    // Push root vertex to the queue
+    Q.enqueue(s);
+    explored[s] = true; // Of course we have explored this one already
+    
+    // So as long as the queue is not empty
+    while (!Q.isEmpty()) {
+        // Remove vertex from the queue
+        int v = Q.dequeue();
+        
+        // Display explored vertice
+        std::cout << v << " ";
+        
+        // From the explored vertice, try to explore all the connected vertices
+        for (int j = 1; j <= n; j++) {
+        }
+    }
+```
                      
 ### Classes
 We can divide the connections into classes as we did with DFS:
