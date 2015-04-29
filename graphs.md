@@ -112,20 +112,27 @@ void Graph::BFS(int sourceNode, int numberOfVertices) {
     list<int> queue;
     
     // Push root vertex to the queue
-    Q.enqueue(sourceNode);
-    explored[s] = true; // Of course we have explored this one already
+    queue.push_back(sourceNode);
+    explored[sourceNode] = true; // Of course we have explored this one already
     
-    // So as long as the queue is not empty
-    while (!Q.isEmpty()) {
-        // Remove vertex from the queue
-        int v = Q.dequeue();
+    // Use an iterator to get all adjacent vertices of a vertex
+    list<int>::iterator i;
+    
+    while (!queue.empty()) {
+        // Dequeue a vertex and print it
+        sourceNode = queue.front();
+        std::cout << sourceNode << " ";
         
-        // Display explored vertice
-        std::cout << v << " ";
-        
-        // From the explored vertice, try to explore all the connected vertices
-        for (int j = 1; j <= n; j++) {
+        // Get all adjacent vertices of the dequeued vertex sourceNode
+        // If a adjacent has not been explored, then mark it visited 
+        // and enqueue it
+        for (i = adj[sourceNode].begin(); i!= adj[s].end(); ++i) {
+            if (!explored[*i]) {
+                explored[*i] = true;
+                queue.push_back(*i);
+            }
         }
+        
     }
 ```
                      
